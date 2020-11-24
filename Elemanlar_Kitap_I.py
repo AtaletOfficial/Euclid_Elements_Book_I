@@ -29,8 +29,6 @@ class RotatingAndMove(Animation):
         )
         self.mobject.shift(alpha*self.direction)
 
-
-# Buradan aşağıya kadar kodları kopyala yapıştır
 class Giris(Scene):
     def construct(self):
 
@@ -80,7 +78,7 @@ class Cikis(Scene):
         self.play(RotatingAndMove(self.moyc, LEFT * 6))
         self.play(FadeOut(self.moyc))
         self.wait()
-#Evvet, buraya kadardı..!
+
 
 
 class Onerme_I(Scene):
@@ -1063,7 +1061,7 @@ class Onerme_II(Scene):
         ortak_kavramlar_3.move_to(UP * 2.3 + RIGHT * 4.5).scale(0.6)
 
         self.play(FadeInFrom(mayc, UP * .3), run_time=1)
-#0       ____________________________________________KONUŞMA BAŞLIYOR!!!
+
         self.play(Write(onerme, run_time=2),
                   RotatingAndMove(mayc, RIGHT * 6), axis=[0, 0, -1], run_time=2.5)
         self.wait()
@@ -4245,7 +4243,6 @@ class Onerme_IV(Scene):
         self.play(FadeOut(self.moyc))
         self.wait()
 
-#   Şu anki video için düzeltmeler yapıldı. Geri dönüp bakma. Sadece ah_öklid_ah 'taki 8. önermeyi renklendir.
 
 
 
